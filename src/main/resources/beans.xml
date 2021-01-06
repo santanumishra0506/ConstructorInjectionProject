@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    
+    <bean id="workAddress" class="com.spring.ioc.basics.Address">
+    <constructor-arg value="7244 york ave S"/>
+    <constructor-arg value="Edina"/>
+    <constructor-arg value="MN"/>
+    </bean>
+    <bean id="randy" class="com.spring.ioc.basics.Employee">
+    <constructor-arg value="randy"/>
+    <constructor-arg value="smith"/>
+    <constructor-arg ref="workAddress"/>
+    </bean>
+    </beans>
